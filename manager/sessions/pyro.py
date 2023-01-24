@@ -67,10 +67,10 @@ class PyroSession:
         *,
         dc_id: int,
         auth_key: bytes,
-        user_id: None | int = None,
+        user_id: int = None,
         is_bot: bool = False,
         test_mode: bool = False,
-        api_id: None | int = None,
+        api_id: int = None,
         **kw
     ):
         self.dc_id = dc_id
@@ -155,7 +155,7 @@ class PyroSession:
     def client(
         self,
         api: Type[APIData],
-        proxy: None | dict = None,
+        proxy: dict = None,
         no_updates: bool = True
     ) -> Client:
         client = Client(

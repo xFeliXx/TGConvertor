@@ -70,9 +70,9 @@ class TeleSession:
         *,
         dc_id: int,
         auth_key: bytes,
-        server_address: None | str = None,
-        port: None | int = None,
-        takeout_id: None | int = None
+        server_address: str = None,
+        port: int = None,
+        takeout_id: int = None
     ):
         self.dc_id = dc_id
         self.auth_key = auth_key
@@ -142,7 +142,7 @@ class TeleSession:
     def client(
         self,
         api: Type[APIData],
-        proxy: None | dict = None,
+        proxy: dict = None,
         no_updates: bool = True
     ):
         client = TelegramClient(

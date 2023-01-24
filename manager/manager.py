@@ -14,8 +14,8 @@ class SessionManager:
         self,
         dc_id: int,
         auth_key: bytes,
-        user_id: None | int = None,
-        valid: None | bool = None,
+        user_id: int = None,
+        valid: bool = None,
         api: Type[APIData] = API.TelegramDesktop,
     ):
         self.dc_id = dc_id
