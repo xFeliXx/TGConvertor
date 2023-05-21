@@ -3,10 +3,10 @@ from distutils.core import setup
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-requirements = ['opentele==1.15.1', "aiosqlite==0.17.0", "pyrogram"]
+requirements = ['opentele==1.15.1', "aiosqlite==0.19.0", "pyrogram"]
 
 setup(name='TGConvertor',
-      version='0.0.7',
+      version='0.0.8',
       description='This module is small util for easy converting Telegram sessions to various formats',
       long_description=long_description,
       long_description_content_type='text/markdown',
